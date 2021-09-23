@@ -1,5 +1,5 @@
 def maximum(num_1,*nums):
-    max = 0
+    max = num_1
     for num_i in nums:
         if(num_i > max):
             max = num_i
@@ -8,5 +8,5 @@ def maximum(num_1,*nums):
     else:
         return max
 
-max = maximum(4,7,32,27,22,96,1,3,32)
+max = maximum(0,-7,-32,-27,-22,96,1,3,32)
 print(max)
