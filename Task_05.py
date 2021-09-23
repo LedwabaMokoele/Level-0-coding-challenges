@@ -3,7 +3,7 @@ def area_of_triangle(x,y,z):
     s_length = (x+y+z)/2
     area_t = (s_length-x)*(s_length-y)*(s_length-z)
     area_t = area_t*s_length
-    area_t = math.sqrt(area_t)
+    area_t = area_t**(0.5)
     return area_t
 
 
