@@ -6,15 +6,24 @@ def convert_to_time(num):
             minutes = num % 60
         if(minutes > 0):
             if(minutes > 1):
-                print(str(hours)+" hours, "+ str(minutes)+" minutes.")
+                if(hours> 1):
+                    print(str(hours)+" hours, "+ str(minutes)+" minutes.")
+                else:
+                    print(str(hours)+" hour, "+ str(minutes)+" minutes.")
             else:
-                print(str(hours)+" hours, "+ str(minutes)+" minute.")
+                if(hours> 1):
+                    print(str(hours)+" hours, "+ str(minutes)+" minute.")
+                else:
+                    print(str(hours)+" hour, "+ str(minutes)+" minute.")
         else:
-            print(str(hours)+" hours.")
+            if(hours> 1):
+                    print(str(hours)+" hours.")
+            else:
+                print(str(hours)+" hour.")
     else:
         minutes = num
         if(minutes != 1):
             print(str(minutes)+" minutes.")
         else:
             print(str(minutes)+" minute.")
-convert_to_time(0)
+convert_to_time(1)
